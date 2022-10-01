@@ -12,6 +12,8 @@ public class Mapa extends JComponent {
     private ArrayList<Obstaculo> cantObstaculos=new ArrayList<Obstaculo>();
     private Random random=new Random();
 
+    private Meta meta = new Meta(10,15,10);
+
     public void setMapa(JFrame mapa) {
         this.mapa = mapa;
     }
@@ -80,7 +82,47 @@ public class Mapa extends JComponent {
             mapa.setVisible(true);
             mapa.setLocation(x,y);
         }
-
     }
 
+    public void setPointMetaAleatorio(int nivel){ //recibe como parametro el nivel de dificultad
+        int x,y;
+        boolean meta_puesta = true;
+        if(nivel==1){
+            x=random.nextInt(50,250);
+            y=random.nextInt(50,250);
+            mapa.getContentPane().add(meta);
+            mapa.setLocation(x,y);
+
+        }else if (nivel==2){
+            x=random.nextInt(50,150);
+            y=random.nextInt(50,150);
+            mapa.getContentPane().add(meta);
+            mapa.setLocation(x,y);
+        }else if(nivel==3){
+            x=random.nextInt(50,75);
+            y=random.nextInt(50,75);
+            mapa.getContentPane().add(meta);
+            mapa.setLocation(x,y);
+        }
+    }
+
+    public void setPointMetaFijo(int x, int y){ //recibe como parametro el nivel de dificultad
+        mapa.getContentPane().add(meta);
+        mapa.setLocation(x,y);
+    }
+
+    public void setNumeroJugadores(int nivel){
+        int cantidad_minimaJugadores=0;
+        int cantidas_maximaJugadores=0;
+        if(nivel==1){
+            cantidad_minimaJugadores = 2;
+            cantidas_maximaJugadores = 4;
+        }else if (nivel==2){
+            cantidad_minimaJugadores = 2;
+            cantidas_maximaJugadores = 3;
+        }else if(nivel==3){
+            cantidad_minimaJugadores = 2;
+            cantidas_maximaJugadores = 2;
+        }
+    }
 }
