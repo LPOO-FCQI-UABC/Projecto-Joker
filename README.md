@@ -1,6 +1,10 @@
 # Projecto-Joker
 Prototipo de proyecto de LPOO
 
+Aqui se encunetra la explicaicon de nuestra primera versión de biblioteca de código para el desarrollo de juegos 2D colaborativos, para el diseño de módulos educativos e interactivos en museos para niño.
+
+
+
 CLASE MAPA:
 
 En esta clase se puede crear un nuevo panel donde se desarrollara el juego. 
