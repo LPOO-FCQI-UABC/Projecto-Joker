@@ -3,7 +3,7 @@ package Prueba1;
 import javax.swing.*;
 import java.awt.*;
 
-public class Obstaculos extends JComponent{
+public class Obstaculo extends JComponent{
     private Image obstaculo;
     private int ancho=10;
     private int alto=15;
@@ -11,7 +11,7 @@ public class Obstaculos extends JComponent{
     private float x, y;
     private float vx, vy;
     // private boolean arriba, abajo, izquierda, derecha;
-    public Obstaculos(int ancho,int alto){
+    public Obstaculo(int ancho,int alto){
         this.ancho=ancho;
         this.alto=alto;
         setPreferredSize(new Dimension(ancho, alto));
@@ -19,7 +19,7 @@ public class Obstaculos extends JComponent{
         x = 10;
         y = 20;
     }
-    public Obstaculos(){
+    public Obstaculo(){
         setPreferredSize(new Dimension(ancho, alto));
     }
 

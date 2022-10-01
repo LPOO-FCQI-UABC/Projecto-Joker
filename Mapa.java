@@ -8,8 +8,8 @@ import java.awt.event.*;
 
 public class Mapa extends JComponent {
     private JFrame mapa = new JFrame("GAMES");
-    private Obstaculos obstaculo;
-    private ArrayList<Obstaculos> cantObstaculos=new ArrayList<Obstaculos>();
+    private Obstaculo obstaculo;
+    private ArrayList<Obstaculo> cantObstaculos=new ArrayList<Obstaculo>();
     private Random random=new Random();
 
     public void setMapa(JFrame mapa) {
@@ -19,14 +19,14 @@ public class Mapa extends JComponent {
     public JFrame getMapa() {
         return mapa;
     }
-    public void setObstaculo(Obstaculos obstaculo){
+    public void setObstaculo(Obstaculo obstaculo){
         this.obstaculo =obstaculo;
 
     }
-    public Obstaculos getObstaculo(){
+    public Obstaculo getObstaculo(){
         return obstaculo;
     }
-    public ArrayList<Obstaculos> getCantObstaculos(){
+    public ArrayList<Obstaculo> getCantObstaculos(){
         return cantObstaculos;
     }
     public void dimenisonesAleatorias(int nivel){
