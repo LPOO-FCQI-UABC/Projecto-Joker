@@ -38,5 +38,9 @@ Contine para cambiar el ancho y alto de la imagen, asi como un metodo para cambi
 CLASE META:
 Esta clase proporciona la configuración completa para la personalización de la meta final de la partida. La meta es una imagen con altura, anchura y diámetro, cuyas especificaciones pueden ser manipuladas por el desarrollador.
 
+CLASE TECLADO:
+En esta clase se propoorciona un lienzo en donde se probara la manipulacion del personaje por medio de control del teclado, quiens era manipulado por el usuario. 
 
+CLASE LIENZO: 
+En esta clase se porporciona la confirguracion para mover el personaje pornmedio de las teclas "w", W, "a", "A", "d", "D", "s", "S", para que e usuario pueda mover al personaje a arriba, abajo, derecha e izquierda. 
        
